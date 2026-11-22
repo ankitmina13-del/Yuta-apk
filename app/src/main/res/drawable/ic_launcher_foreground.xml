@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Tilted cosmic ring behind the mark -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-18">
+        <path
+            android:pathData="M54,27 C70,27 83,36.4 83,48 C83,59.6 70,69 54,69 C38,69 25,59.6 25,48 C25,36.4 38,27 54,27 Z"
+            android:strokeWidth="2.6"
+            android:fillColor="#00000000">
+            <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:strokeColor">
+                <gradient
+                    android:angle="0"
+                    android:startColor="#9C7BFF"
+                    android:centerColor="#6E8CFF"
+                    android:endColor="#00E5C7" />
+            </aapt:attr>
+        </path>
+    </group>
+
+    <!-- Soft glow dot inside the ring -->
+    <path android:pathData="M54,48 m-30,0 a30,30 0 1,1 60,0 a30,30 0 1,1 -60,0"
+        android:fillAlpha="0.08">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="54"
+                android:centerY="48"
+                android:gradientRadius="30"
+                android:startColor="#7C5CFF"
+                android:endColor="#00000000" />
+        </aapt:attr>
+    </path>
+
+    <!-- Y mark: left ribbon stroke -->
+    <path android:pathData="M37,33 L54,58 L54,58 L47,58 L31,37 Z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:angle="90"
+                android:startColor="#C9B8FF"
+                android:endColor="#7C5CFF" />
+        </aapt:attr>
+    </path>
+
+    <!-- Y mark: right ribbon stroke -->
+    <path android:pathData="M71,33 L77,37 L61,58 L54,58 Z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:angle="90"
+                android:startColor="#8FF7EA"
+                android:endColor="#00E5C7" />
+        </aapt:attr>
+    </path>
+
+    <!-- Y mark: stem -->
+    <path android:pathData="M50.5,58 L57.5,58 L57.5,78 L50.5,78 Z"
+        android:fillColor="#F5F3FF" />
+
+    <!-- Center highlight where the ribbons cross -->
+    <path android:pathData="M54,56 m-3.4,0 a3.4,3.4 0 1,1 6.8,0 a3.4,3.4 0 1,1 -6.8,0"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Sparkle accent, top-right -->
+    <path android:pathData="M78,22 L80,28 L86,30 L80,32 L78,38 L76,32 L70,30 L76,28 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9" />
+</vector>
